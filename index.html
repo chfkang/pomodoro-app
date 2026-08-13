@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7f9" />
+    <title>番茄钟</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="timer-panel" aria-labelledby="app-title">
+        <p class="eyebrow">专注计时器</p>
+        <h1 id="app-title">番茄钟</h1>
+        <div class="status-row">
+          <span id="mode-label" class="mode-label">工作时间</span>
+          <span id="status-label" class="status-label">准备开始</span>
+        </div>
+        <div class="timer" role="timer" aria-live="polite" aria-atomic="true"><span id="time-display">25:00</span></div>
+        <div class="controls" aria-label="计时控制">
+          <button id="start-pause-button" class="button button-primary" type="button">开始</button>
+          <button id="reset-button" class="button button-secondary" type="button">重置</button>
+        </div>
+        <p id="hint" class="hint">准备好后开始专注</p>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
